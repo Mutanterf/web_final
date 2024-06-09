@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avicenna Medical Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="med-web/style.css">
+    <style>
+        body {
+            font-size: 15px; 
+        }
+
+        h1, h2, h3, h5, .card-title {
+            font-size: 1.25em;
+        }
+
+        p, .card-text, .card-body p {
+            font-size: 1em;
+        }
+
+        .btn {
+            font-size: 1.15em; 
+            background-color: #224eb4;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #224eb4;
+        }
+
+        .doctor-profile {
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .faq {
+            margin-bottom: 30px;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-header {
+            background-color: #224eb4;
+            color: white;
+        }
+
+        .btn-link {
+            color: white;
+        }
+
+        .btn-link:hover {
+            color: #224eb4;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><span>A</span>vi<span>C</span>enna</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="doctors.html">doctors</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="doctorsru.html" class="language-switch">русский</a></li>
+                </ul>
+            </nav>
+            <div class="fas fa-bars"></div>
+        </div>
+    </header>
+    
+    <br><br><br><br>
+
+    <div class="container mt-5">
+        <h1 id="doctors_title" class="text-center">Meet Our Doctors</h1>
+        <p id="doctors_description" class="text-center">Our team of highly qualified and experienced doctors.</p>
+
+        <div class="row">
+            <div class="col-md-4 doctor-profile" data-aos="fade-up">
+                <div class="card">
+                    <img src="images/docs/image copy.png" class="card-img-top" alt="Doctor 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Mika</h5>
+                        <p class="card-text">Cardiologist</p>
+                        <p>Qualifications: MBBS, MD (Cardiology)</p>
+                        <p>Experience: 15 years</p>
+                        <a href="mailto:230042@astanait.edu.kz" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 doctor-profile" data-aos="fade-up">
+                <div class="card">
+                    <img src="images/docs/image copy 2.png" class="card-img-top" alt="Doctor 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Meiirkhan</h5>
+                        <p class="card-text">Neurologist</p>
+                        <p>Qualifications: MBBS, MD (Neurology)</p>
+                        <p>Experience: 10 years</p>
+                        <a href="mailto:230042@astanait.edu.kz" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 doctor-profile" data-aos="fade-up">
+                <div class="card">
+                    <img src="images/docs/image.png" class="card-img-top" alt="Doctor 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Zhibek</h5>
+                        <p class="card-text">Pediatrician</p>
+                        <p>Qualifications: MBBS, MD (Pediatrics)</p>
+                        <p>Experience: 8 years</p>
+                        <a href="mailto:230042@astanait.edu.kz" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h2 class="text-center my-5">What Our Patients Say</h2>
+            <div class="row">
+                <div class="col-md-4 testimonial" data-aos="fade-right">
+                    <p><i class="fas fa-quote-left"></i> Dr. Mika is amazing! His expertise in cardiology saved my life. Highly recommend!</p>
+                    <p class="text-right"><strong>- Patient A</strong></p>
+                </div>
+                <div class="col-md-4 testimonial" data-aos="fade-up">
+                    <p><i class="fas fa-quote-left"></i> Dr. Meiirkhan is very professional and knowledgeable. She provided excellent care and support.</p>
+                    <p class="text-right"><strong>- Patient B</strong></p>
+                </div>
+                <div class="col-md-4 testimonial" data-aos="fade-left">
+                    <p><i class="fas fa-quote-left"></i> My kids love Dr. Zhibek. She is caring and makes the visits enjoyable.</p>
+                    <p class="text-right"><strong>- Patient C</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h2 class="text-center my-5">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="faqHeading1">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                What are the clinic hours?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Our clinic is open from Monday to Friday, 9 AM to 6 PM.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="faqHeading2">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                How can I make an appointment?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            You can make an appointment by calling our clinic or through our online appointment form on the contact page.
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <div class="card-header" id="faqHeading3">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                Do you accept insurance?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, we accept most major insurance plans. Please contact us for more details.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+
+        <div class="container">
+    
+            <div class="row">
+    
+                <div class="col-md-4" data-aos="fade-right">
+                    <a href="#" class="logo"><span>A</span>vi<span>C</span>enna</a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nemo porro quasi minima consequuntur dolorum, quas amet in autem id?</p>
+                </div>
+    
+                <div class="col-md-4 text-center" data-aos="fade-up">
+                    <h3>links</h3>
+                    <a href="index.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="services.html">services</a>
+                    <a href="doctors.html">doctors</a>
+                    <a href="contact.html">contact</a>
+                </div>
+    
+                <div class="col-md-4 text-center" data-aos="fade-left">
+                    <h3>share</h3>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/meiirkhan_shamurat?igsh=cm90amFqMGJtamF1" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/meiirkhan-shamurat-55359a2b4/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <h1 class="credit text-center mx-auto">2024 Meiirkhan Shamurat &copy</h1>
+    
+    </section>
+
+    <!-- JS Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        AOS.init();
+        $('.popup-link').magnificPopup({
+            type: 'image'
+        });
+    </script>
+
+</body>
+
+</html>

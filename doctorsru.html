@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медицинский веб-сайт Avicenna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="med-web/style.css">
+    <style>
+        body {
+            font-size: 15px; 
+        }
+
+        h1, h2, h3, h5, .card-title {
+            font-size: 1.25em;
+        }
+
+        p, .card-text, .card-body p {
+            font-size: 1em;
+        }
+
+        .btn {
+            font-size: 1.15em; 
+            background-color: #224eb4;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #224eb4;
+        }
+
+        .doctor-profile {
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .faq {
+            margin-bottom: 30px;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-header {
+            background-color: #224eb4;
+            color: white;
+        }
+
+        .btn-link {
+            color: white;
+        }
+
+        .btn-link:hover {
+            color: #224eb4;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><span>A</span>vi<span>С</span>enna</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="indexru.html">Главная</a></li>
+                    <li><a href="aboutru.html">О нас</a></li>
+                    <li><a href="servicesru.html">Услуги</a></li>
+                    <li><a href="doctorsru.html">Врачи</a></li>
+                    <li><a href="contactru.html">Контакты</a></li>
+                    <li><a href="doctors.html" class="language-switch">English</a></li>
+                </ul>
+            </nav>
+            <div class="fas fa-bars"></div>
+        </div>
+    </header>
+    
+    <br><br><br><br>
+
+    <div class="container mt-5">
+        <h1 id="doctors_title" class="text-center">Познакомьтесь с нашими врачами</h1>
+        <p id="doctors_description" class="text-center">Наша команда высококвалифицированных и опытных врачей.</p>
+
+        <div class="row">
+            <div class="col-md-4 doctor-profile" data-aos="fade-up">
+                <div class="card">
+                    <img src="images/docs/image copy.png" class="card-img-top" alt="Доктор 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Доктор Мика</h5>
+                        <p class="card-text">Кардиолог</p>
+                        <p>Квалификация: MBBS, MD (Кардиология)</p>
+                        <p>Опыт работы: 15 лет</p>
+                        <a href="mailto:230042@astanait.edu.kz" class="btn btn-primary"><i class="fas fa-envelope"></i> Связаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 doctor-profile" data-aos="fade-up">
+                <div class="card">
+                    <img src="images/docs/image copy 2.png" class="card-img-top" alt="Доктор 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Доктор Мейирхан</h5>
+                        <p class="card-text">Невролог</p>
+                        <p>Квалификация: MBBS, MD (Неврология)</p>
+                        <p>Опыт работы: 10 лет</p>
+                        <a href="mailto:230042@astanait.edu.kz" class="btn btn-primary"><i class="fas fa-envelope"></i> Связаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 doctor-profile" data-aos="fade-up">
+                <div class="card">
+                    <img src="images/docs/image.png" class="card-img-top" alt="Доктор 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Доктор Жибек</h5>
+                        <p class="card-text">Педиатр</p>
+                        <p>Квалификация: MBBS, MD (Педиатрия)</p>
+                        <p>Опыт работы: 8 лет</p>
+                        <a href="mailto:230042@astanait.edu.kz" class="btn btn-primary"><i class="fas fa-envelope"></i> Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h2 class="text-center my-5">Что говорят наши пациенты</h2>
+            <div class="row">
+                <div class="col-md-4 testimonial" data-aos="fade-right">
+                    <p><i class="fas fa-quote-left"></i> Доктор Мика - удивительный! Его опыт в кардиологии спас мне жизнь. Очень рекомендую!</p>
+                    <p class="text-right"><strong
+                        ```html
+                        >- Пациент А</strong></p>
+                                        </div>
+                                        <div class="col-md-4 testimonial" data-aos="fade-up">
+                                            <p><i class="fas fa-quote-left"></i> Доктор Мейирхан очень профессионален и компетентен. Она предоставила отличный уход и поддержку.</p>
+                                            <p class="text-right"><strong>- Пациент B</strong></p>
+                                        </div>
+                                        <div class="col-md-4 testimonial" data-aos="fade-left">
+                                            <p><i class="fas fa-quote-left"></i> Мои дети любят Доктора Жибек. Она заботлива и делает приемы приятными.</p>
+                                            <p class="text-right"><strong>- Пациент C</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- FAQ Section -->
+                                <div class="faq">
+                                    <h2 class="text-center my-5">Часто задаваемые вопросы</h2>
+                                    <div class="accordion" id="faqAccordion">
+                                        <div class="card" data-aos="fade-up">
+                                            <div class="card-header" id="faqHeading1">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                                        Каковы часы работы клиники?
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                                                <div class="card-body">
+                                                    Наша клиника открыта с понедельника по пятницу с 9:00 до 18:00.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="fade-up">
+                                            <div class="card-header" id="faqHeading2">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                                        Как я могу записаться на прием?
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                                                <div class="card-body">
+                                                    Вы можете записаться на прием, позвонив в нашу клинику или через нашу онлайн-форму записи на странице контактов.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card" data-aos="fade-up">
+                                            <div class="card-header" id="faqHeading3">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                                        Принимаете ли вы страхование?
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                                                <div class="card-body">
+                                                    Да, мы принимаем большинство основных страховых планов. Пожалуйста, свяжитесь с нами для получения более подробной информации.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <section class="footer">
+                        
+                                <div class="container">
+                            
+                                    <div class="row">
+                            
+                                        <div class="col-md-4" data-aos="fade-right">
+                                            <a href="#" class="logo"><span>A</span>vi<span>C</span>enna</a>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nemo porro quasi minima consequuntur dolorum, quas amet in autem id?</p>
+                                        </div>
+                            
+                                        <div class="col-md-4 text-center" data-aos="fade-up">
+                                            <h3>Ссылки</h3>
+                                            <a href="index.html">главная</a>
+                                            <a href="about.html">о нас</a>
+                                            <a href="services.html">услуги</a>
+                                            <a href="doctors.html">врачи</a>
+                                            <a href="contact.html">контакты</a>
+                                        </div>
+                            
+                                        <div class="col-md-4 text-center" data-aos="fade-left">
+                                            <h3>Поделиться</h3>
+                                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="https://x.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                                            <a href="https://www.instagram.com/meiirkhan_shamurat?igsh=cm90amFqMGJtamF1" target="_blank"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/in/meiirkhan-shamurat-55359a2b4/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                            
+                                    </div>
+                            
+                                </div>
+                            
+                                <h1 class="credit text-center mx-auto">2024 Meiirkhan Shamurat &copy</h1>
+                            
+                            </section>
+                        
+                            <!-- JS Scripts -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+                            <script>
+                                AOS.init();
+                                $('.popup-link').magnificPopup({
+                                    type: 'image'
+                                });
+                            </script>
+                        
+                        </body>
+                        
+                        </html>

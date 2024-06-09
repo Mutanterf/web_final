@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avicenna Medical Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="med-web/style.css">
+    <style>
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><span>A</span>vi<span>C</span>enna</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="doctors.html">doctors</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="contactru.html" class="language-switch">русский</a></li>
+                </ul>
+            </nav>
+            <div class="fas fa-bars"></div>
+        </div>
+    </header>
+    
+    <br><br><br><br>
+    
+    <section class="contact" id="contact">
+        <div class="container min-vh-100">
+            <div class="row justify-content-center">
+                <h1 class="heading">make an appointment</h1>
+                <div class="col-md-10" data-aos="flip-down">
+                    <form id="appointmentForm">
+                        <div class="inputBox">
+                            <input type="text" id="fullName" placeholder="full name">
+                            <input type="number" id="phone" placeholder="phone">
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" id="email" placeholder="your email">
+                            <select id="appointmentTime">
+                                <option value="" disabled selected>make an appointment</option>
+                                <option value="09-11 am">09-11 am</option>
+                                <option value="11-03 pm">11-03 pm</option>
+                                <option value="03-06 pm">03-06 pm</option>
+                                <option value="06-09 pm">06-09 pm</option>
+                            </select>
+                        </div>
+                        <textarea id="message" cols="30" rows="10" placeholder="message ( optional )"></textarea>
+                        <input type="submit" value="make appointment" class="button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio files -->
+    <audio id="errorSound" src="images/sound/error-8-206492.mp3"></audio>
+    <audio id="successSound" src="images/sound/success-1-6297.mp3"></audio>
+    <script src="js/script.js"></script>
+
+    <!-- Google Maps Section -->
+    <section class="map">
+        <div class="container">
+            <h2 class="text-center">Our Location</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="map-container" data-aos="fade-up">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11725.32435608971!2d71.4123496!3d51.1259186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245851c8a741855%3A0xbce07d485f60f3a7!2sExpo+2017+Astana!5e0!3m2!1sen!2sus!4v1625627787121!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section starts  -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right">
+                    <a href="#" class="logo"><span>A</span>vi<span>C</span>enna</a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nemo porro quasi minima consequuntur dolorum, quas amet in autem id?</p>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up">
+                    <h3>links</h3>
+                    <a href="index.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="services.html">services</a>
+                    <a href="doctors.html">doctors</a>
+                    <a href="contact.html">contact</a>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-left">
+                    <h3>share</h3>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/meiirkhan_shamurat?igsh=cm90amFqMGJtamF1" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/meiirkhan-shamurat-55359a2b4/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit text-center mx-auto">2024 Meiirkhan Shamurat &copy</h1>
+    </section>
+    <!-- footer section ends -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- magnific popup js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- aos js file cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- custom js link  -->
+    <script src="med-web/script.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 400
+        });
+    </script>
+</body>
+
+</html>

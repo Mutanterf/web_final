@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медицинский веб-сайт "Авиценна"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="med-web/style.css">
+    <style>
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><span>A</span>vi<span>C</span>enna</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="indexru.html">Главная</a></li>
+                    <li><a href="aboutru.html">О нас</a></li>
+                    <li><a href="servicesru.html">Услуги</a></li>
+                    <li><a href="doctorsru.html">Врачи</a></li>
+                    <li><a href="contactru.html">Контакты</a></li>
+                    <li><a href="contact.html" class="language-switch">English</a></li>
+                </ul>
+            </nav>
+            <div class="fas fa-bars"></div>
+        </div>
+    </header>
+    
+    <br><br><br><br>
+    
+    <!-- Начало секции контактов -->
+
+    <section class="contact" id="contact">
+        <div class="container min-vh-100">
+            <div class="row justify-content-center">
+                <h1 class="heading">записаться на приём</h1>
+                <div class="col-md-10" data-aos="flip-down">
+                    <form id="appointmentForm">
+                        <div class="inputBox">
+                            <input type="text" id="fullName" placeholder="Полное имя">
+                            <input type="number" id="phone" placeholder="Телефон">
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" id="email" placeholder="Ваш email">
+                            <select id="appointmentTime">
+                                <option value="" disabled selected>Выберите время для записи</option>
+                                <option value="09-11 am">09-11 утра</option>
+                                <option value="11-03 pm">11-03 дня</option>
+                                <option value="03-06 pm">03-06 вечера</option>
+                                <option value="06-09 pm">06-09 вечера</option>
+                            </select>
+                        </div>
+                        <textarea id="message" cols="30" rows="10" placeholder="Сообщение (необязательно)"></textarea>
+                        <input type="submit" value="Записаться" class="button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <audio id="errorSound" src="images/sound/error-8-206492.mp3"></audio>
+    <audio id="successSound" src="images/sound/success-1-6297.mp3"></audio>
+    <script src="js/script.js"></script>
+
+    <!-- Секция Google Maps -->
+
+    <section class="map">
+        <div class="container">
+            <h2 class="text-center">Наше местоположение</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="map-container" data-aos="fade-up">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11725.32435608971!2d71.4123496!3d51.1259186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245851c8a741855%3A0xbce07d485f60f3a7!2sExpo+2017+Astana!5e0!3m2!1sen!2sus!4v1625627787121!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Начало секции футера -->
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-right">
+                    <a href="#" class="logo"><span>A</span>vi<span>C</span>enna</a>
+                    <p>Лорем ипсум, долор сит амет консецтетур адиписицинг элит. Тенетур немо порро квуаси минима консецунтур долорум, квуас амет ин аутем ид?</p>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up">
+                    <h3>Ссылки</h3>
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О нас</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="doctors.html">Врачи</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-left">
+                    <h3>Поделиться</h3>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/meiirkhan_shamurat?igsh=cm90amFqMGJtamF1" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/meiirkhan-shamurat-55359a2b4/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    </div>
+                    </div>
+                    <h1 class="credit text-center mx-auto">2024 Меирхан Шамурат &copy</h1>
+                    </section>
+                    <!-- Конец секции футера -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<!-- Ссылка на jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Ссылка на js-файл Magnific Popup -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<!-- Ссылка на js-файл AOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Ссылка на пользовательский js-файл -->
+<script src="med-web/script.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        delay: 400
+    });
+</script>
+
